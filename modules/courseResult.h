@@ -7,13 +7,11 @@ typedef struct CourseResult
 {
     Course *course;
     double marks;
+    int completed;
 } CourseResult;
 
-CourseResult createCourseResult(Course *course, double marks);
-
-double getGradePoint(CourseResult result);
-char *getLetterGrade(CourseResult result);
-double calculateGPA(CourseResult results[], int n_results);
+CourseResult createCompletedCourseResult(Course *course, double marks);
+CourseResult createIncompleteCourseResult(Course *course);
 
 void viewCourseResult(CourseResult result);
 
