@@ -10,6 +10,11 @@ typedef struct CourseResult
 } CourseResult;
 
 CourseResult createCourseResult(Course *course, double marks);
+
+double getGradePoint(CourseResult result);
+char *getLetterGrade(CourseResult result);
+double calculateGPA(CourseResult results[], int n_results);
+
 void viewCourseResult(CourseResult result);
 
 #endif
