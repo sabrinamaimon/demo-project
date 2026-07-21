@@ -1,10 +1,23 @@
 #include <stdio.h>
-#include "course.h"
-#include "courseResult.h"
 #include "gpa.h"
 
 void showMenu()
 {
+ feature007
+    double current_cgpa, completed_credits, target_cgpa, remaining_credits;
+
+    printf("Current CGPA: ");
+    scanf("%lf", &current_cgpa);
+    printf("Completed credits: ");
+    scanf("%lf", &completed_credits);
+    printf("Target CGPA: ");
+    scanf("%lf", &target_cgpa);
+    printf("Remaining credits: ");
+    scanf("%lf", &remaining_credits);
+
+    printf("Required GPA: %.2f\n",
+           calculateRequiredGPA(current_cgpa, completed_credits,
+                                target_cgpa, remaining_credits));
     printf("1. Add Course\n");
     printf("2. Edit Course\n");
     printf("3. Delete Course\n");
@@ -270,6 +283,7 @@ int main()
         else if (choice == 8)
             viewMarksheet(results, n_results);
     }
+ main
 
     return 0;
 }
