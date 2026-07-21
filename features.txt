@@ -1,4 +1,3 @@
 
-009 - Handle multiple students' data [Dependency: 007, 008] 
 010 - Add students' ranking [Dependency: 009]
 
